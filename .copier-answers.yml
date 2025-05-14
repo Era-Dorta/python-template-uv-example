@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier
+_commit: v0.2.17-11-gf23d2a4
+_src_path: ./python-project-template/
+email: e.dorta@tudelft.nl
+environment_manager: uv
+full_name: Era Dorta
+host: github.com
+license: GPL
+min_python_version: '3.10'
+org: Era-Dorta
+project_name: python-template-uv-example
+project_short_description: A great package.
+python_name: python_template_uv_example
+url: https://github.com/Era-Dorta/python-template-uv-example

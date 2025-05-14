@@ -1,0 +1,26 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Replace 'main' with your default branch name if necessary
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: latest
+
+      - name: Install the project and its dependencies
+        run: uv sync
+
+      - name: Build and deploy with mkdocs
+        run: uv run mkdocs gh-deploy --force
