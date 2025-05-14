@@ -46,4 +46,4 @@ jobs:
         run: uv sync --dev
 
       - name: Execute Jupyter Notebook
-        run: uv run jupyter nbconvert --to notebook --execute notebooks/auto_handson.ipynb
+        run: uv run jupyter execute notebooks/auto_handson.ipynb
