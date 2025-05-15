@@ -37,7 +37,7 @@ This will set up pre-commit to run the checks automatically on your files before
     uv run pre-commit install
     ```
 
-  **Remember that if the pre-commit checks fail, you can always commit by skipping the checks with `git commit --no-verify`**
+  **Remember that if the pre-commit checks fail, you can always commit by skipping the checks with `git commit --no-verify` asdf**
 
 ## Running the main script
 
