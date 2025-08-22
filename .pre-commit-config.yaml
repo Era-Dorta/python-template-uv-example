@@ -35,3 +35,11 @@ repos:
               ^.copier-answers.yml|
               ^.pre-commit-config.yaml
           )
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.8.3
+    hooks:
+      # - id: commitizen
+      - id: commitizen-branch
+        stages:
+        - push

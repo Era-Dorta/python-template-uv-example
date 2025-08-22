@@ -7,11 +7,12 @@ authors = [
 description = "A great package."
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+]
 
 [tool.uv]
 dev-dependencies = [
-  "hatch>=1.13.0,<2",
+  "commitizen>=4.8.3",
   "pre-commit>=3.8.0,<4",
   "pytest>=8.3.3,<9",
   "pytest-cov>=5.0.0,<6",
@@ -20,15 +21,17 @@ dev-dependencies = [
   "setuptools-scm>=8.1.0,<9",
 ]
 
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "uv"
+update_changelog_on_bump = true
+major_version_zero = true
+
 [build-system]
-requires = ["hatchling", "hatch-vcs"]
-build-backend = "hatchling.build"
-
-[tool.hatch.version]
-source = "vcs"
-
-[tool.hatch.build.hooks.vcs]
-version-file = "_version.py"
+requires = ["uv_build>=0.8.3,<0.9.0"]
+build-backend = "uv_build"
 
 [project.urls]
 Homepage = "https://github.com/Era-Dorta/python-template-uv-example"
