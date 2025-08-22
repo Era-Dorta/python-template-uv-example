@@ -30,8 +30,6 @@ def main() -> None:
     print(f"Running python_template_uv_example version {__version__}")
     print(f"Result is: 1+2 = {add(1, 2)}")
 
-    print("some changes")
-
 
 if __name__ == "__main__":
     main()
