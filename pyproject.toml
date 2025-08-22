@@ -29,9 +29,16 @@ version_provider = "uv"
 update_changelog_on_bump = true
 major_version_zero = true
 
+# [build-system]
+# requires = ["uv_build>=0.8.3,<0.9.0"]
+# build-backend = "uv_build"
+
+[tool.hatch.version]
+source = "vcs"
+
 [build-system]
-requires = ["uv_build>=0.8.3,<0.9.0"]
-build-backend = "uv_build"
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
 
 [project.urls]
 Homepage = "https://github.com/Era-Dorta/python-template-uv-example"
