@@ -4,25 +4,16 @@ python-template-uv-example: A great package.
 
 from __future__ import annotations
 
-import json
-import sys
 from importlib.metadata import Distribution, version
 
 
 def _is_editable() -> bool:
     dist = Distribution.from_name("python-template-uv-example")
 
-    if sys.version_info >= (3, 13):
-        try:
-            editable = dist.origin.dir_info.editable
-        except AttributeError:
-            editable = False
-    else:
-        direct_url = dist.read_text("direct_url.json")
-        if direct_url is None:
-            return False
-
-        editable = json.loads(direct_url).get("dir_info", {}).get("editable", False)
+    try:
+        editable = dist.origin.dir_info.editable
+    except AttributeError:
+        editable = False
 
     if not isinstance(editable, bool):
         return False

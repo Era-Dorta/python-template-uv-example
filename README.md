@@ -54,10 +54,7 @@ Add dependencies by running
 ```bash
 uv add numpy
 ```
-if you want to install torch with CUDA support, you can do it via:
-```bash
-uv add torch==2.4.1+cu121 torchaudio==2.4.1+cu121 torchvision==0.19.1+cu121 --extra-index-url https://download.pytorch.org/whl/cu121
-```
+if you want to install PyTorch have a look at https://docs.astral.sh/uv/guides/integration/pytorch/
 
 ## Running tests
 
@@ -138,6 +135,10 @@ In short, they boil down to running:
     ```bash
     uv publish
     ```
+
+If your package is private and you are using gitlab.ewi.tudelft.nl, you can publish it to it's private registry.
+This will let you do `pip install python-template-uv-example`.
+See the instructions [here](https://gitlab.ewi.tudelft.nl/reit/python-package-template/-/blob/main/GITLAB-PYPI.md).
 
 ## License
 Distributed under the terms of the [GPL license](LICENSE).
