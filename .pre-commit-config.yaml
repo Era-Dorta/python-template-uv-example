@@ -35,3 +35,8 @@ repos:
               ^.copier-answers.yml|
               ^.pre-commit-config.yaml
           )
+
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    rev: 0.8.17
+    hooks:
+      - id: uv-lock
