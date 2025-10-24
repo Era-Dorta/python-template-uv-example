@@ -20,7 +20,7 @@ def add(a: int, b: int) -> int:
     Raises:
         ValueError: If either a or b is negative.
     """
-    if a < 0 or b < 0:
+    if a <= 0 or b < 0:
         msg = "Both arguments must be positive"
         raise ValueError(msg)
     return a + b
