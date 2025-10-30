@@ -26,6 +26,13 @@ def add(a: int, b: int) -> int:
     return a + b
 
 
+def foo1(a):
+    c = a + 1
+    if a > 0 and a > 10:
+        return 10
+    return a + c
+
+
 def main() -> None:
     print(f"Running python_template_uv_example version {__version__}")
     print(f"Result is: 1+2 = {add(1, 2)}")
