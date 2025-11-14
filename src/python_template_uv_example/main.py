@@ -10,8 +10,6 @@ from python_template_uv_example import __version__
 def add(a: int, b: int) -> int:
     """Adds two positive numbers together.
 
-    More comments
-
     Args:
         a (int): The first number.
         b (int): The second number.

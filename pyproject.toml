@@ -2,14 +2,12 @@
 name = "python-template-uv-example"
 dynamic = ["version"]
 authors = [
-  { name = "Era Dorta A", email = "e.dorta@tudelft.nl" },
+  { name = "Era Dorta", email = "e.dorta@tudelft.nl" },
 ]
 description = "A great package."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "numpy>=2.3.4,<3",
-]
+dependencies = []
 
 [dependency-groups]
 dev = [

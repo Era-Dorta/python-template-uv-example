@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: python-template-uv-example
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+version: 0.0.1
+authors:
+  - given-names: Era
+    family-names: Dorta
+    email: e.dorta@tudelft.nl
+    affiliation: TU Delft
+repository-code: https://github.com/Era-Dorta/python-template-uv-example
+license: GPL
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.1234 # Uncomment this an replace with real DOI
